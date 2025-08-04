@@ -60,11 +60,14 @@ app.post("/frases", async (req, res) => {
 });
 
 // Listar todas las frases (con información del personaje y el título del capítulo)
-// Pendiente la información del personaje y y el título del capítulo
 app.get("/frases", async (req, res) => {
   try {
     const connection = await getConnection();
-    const [rows] = await connection.execute(`SELECT * FROM frases;`);
+    const [rows] = await connection.execute(`
+      SELECT frases.*, personajes.* 
+      FROM frases 
+      JOIN personajes ON frases.personaje_id = personajes.id;
+    `);
     await connection.end();
 
     res.json({
