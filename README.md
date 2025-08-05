@@ -17,7 +17,6 @@ Crea una nueva frase.
 
 🔹 PUT /frases/:id
 Actualiza una frase existente.
-Body: igual que POST.
 
 🔹 DELETE /frases/:id
 Elimina una frase.
