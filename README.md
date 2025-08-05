@@ -28,10 +28,10 @@ Obtiene todas las frases, incluyendo información del personaje.
   ]
 }
 
-🔹 GET /frases/:id
+#### 🔹 GET /frases/:id
 Obtiene una frase por su ID.
 
-🔹 POST /frases
+#### 🔹 POST /frases
 Crea una nueva frase. Body:
 {
   "texto": "¡Ejemplo!",
@@ -40,23 +40,24 @@ Crea una nueva frase. Body:
   "personaje_id": 1
 }
 
-🔹 PUT /frases/:id
+#### 🔹 PUT /frases/:id
 Actualiza una frase existente.
 Body: igual que POST.
 
-🔹 DELETE /frases/:id
+#### 🔹 DELETE /frases/:id
 Elimina una frase.
 
-🔹 GET /frases/personaje/:personaje_id
+#### 🔹  GET /frases/personaje/:personaje_id
 Obtiene todas las frases de un personaje específico.
 
 📌 Personajes
-🔹 GET /personajes
+#### 🔹  GET /personajes
 Obtiene todos los personajes.
 
 📌 Capítulos
-🔹 GET /capitulos
+#### 🔹  GET /capitulos
 Obtiene todos los capítulos.
+
 
 ℹ️ Notas
 Todas las respuestas son en formato JSON.
