@@ -35,6 +35,7 @@ Obtiene todos los capítulos.
 
 
 ℹ️ Notas
-Todas las respuestas son en formato JSON.
-Si ocurre un error, se devuelve un mensaje de error y el código HTTP correspondiente.
-Puedes probar los endpoints usando Postman o cualquier cliente HTTP.
+
+- Todas las respuestas son en formato JSON.
+- Si ocurre un error, se devuelve un mensaje de error y el código HTTP correspondiente.
+- Puedes probar los endpoints usando Postman o cualquier cliente HTTP.
